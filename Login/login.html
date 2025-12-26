@@ -13,21 +13,31 @@
 
 <div class="container" id="container">
     <div class="form-container sign-up">
-        <form>
+        <form id="signupForm" method="POST" action="register.php">
             <h1>Create Account</h1>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
+            <input type="text" id="signupName" name="name" placeholder="Name">
+            <p class="error" id="nameError"></p>
+            <input type="email" id="signupEmail" name="email" placeholder="Email">
+            <p class="error" id="emailError"></p>
+            <input type="password" id="signupPassword"  name="password" placeholder="Password">
+            <p class ="error" id="passwordError"></p>
             <button>Sign Up</button>
         </form>
     </div>
     <div class="form-container sign-in">
-        <form>
+        <form id="loginForm" method="POST" action="login.php">
             <h1>Log In</h1>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <a href="#">Forget Your Password?</a>
-            <button>Log In</button>
+            <input type="email"id="loginEmail" name="email" placeholder="Email">
+            <p class="error" id="loginEmailError"></p>
+            <input type="password" id="loginPassword" name="password" placeholder="Password">
+            <p class="error" id="loginPasswordError"></p>
+            <div class="remember-container">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+
+            <a href="forgotPassword.html">Forgot Your Password? </a>
+            <button type="submit">Log In</button>
         </form>
     </div>
     <div class="toggle-container">
