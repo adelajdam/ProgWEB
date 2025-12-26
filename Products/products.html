@@ -2,228 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>products</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <title>Product Details</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 
-<header>
+<div class="product-details">
+    <h1 id="product-name"></h1>
+    <img id="product-img" alt="">
+    <p id="product-price"></p>
+    <p id="product-stock"></p>
+    <h3>Description</h3>
+    <p id="product-desc"></p>
+    <h3>Ingredients</h3>
+    <ul id="product-ingredients"></ul>
+</div>
 
-    <input type="checkbox" name="" id="toggler">
-    <label for="toggler" class="fas fa-bars"></label>
-
-    <a href="#" class="logo">SoftPetal<span>.</span></a>
-
-    <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">rreth nesh</a>
-        <a href="#products">produktet</a>
-    </nav>
-
-    <div class="icons">
-        <a href="#"><i class="fas fa-heart"></i></a>
-        <a href="#"><i class="fas fa-shopping-cart"></i></a>
-        <a href="#"><i class="fas fa-user"></i></a>
-    </div>
-
-</header>
-
-
-<section class="home" id="home">
-    <div class="content">
-        <h3>Welcome to SoftPetals!</h3>
-        <span>Korean skincare and more</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda consequatur delectus distinctio dolore esse.</p>
-        <a href="#" class="btn">Bli tani</a>
-    </div>
-</section>
-
-
-<section class="about" id="about">
-    <h1 class="heading"> <span> rreth </span> nesh </h1>
-    <div class="row">
-        <div class="video-contain">
-            <iframe
-                    src="https://www.youtube.com/embed/o6iNxgI7V00"
-                    allow="autoplay; encrypted-media"
-                    allowfullscreen>
-            </iframe>
-        </div>
-
-        <div class="content">
-            <h3>pse na zgjidhni ne?</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur at eos laudantium nam quibusdam, sequi temporibus veritatis! Facilis ipsa magnam natus omnis porro? Cupiditate earum in quis rem repudiandae?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis cupiditate doloremque esse obcaecati officiis omnis? A, dolore error impedit molestias numquam praesentium quis quisquam suscipit voluptate? Incidunt sunt, unde.</p>
-            <a href="#" class="btn">learn more</a>
-        </div>
-    </div>
-</section>
-
-
-<section class="icons-container">
-
-    <div class="icons">
-        <img src="https://static.vecteezy.com/system/resources/previews/014/455/904/original/delivery-truck-icon-icon-on-transparent-background-free-png.png" alt="">
-            <h3>Posta falas</h3>
-            <span>per cdo porosi</span>
-    </div>
-
-    <div class="icons">
-        <img src="https://cdn4.iconfinder.com/data/icons/ecommerce-500/64/09-Refund-512.png" alt="">
-            <h3>Kthime & nderrime</h3>
-            <span>kthimi i porosise kushton 300L</span>
-    </div>
-
-    <div class="icons">
-        <img src="https://static.vecteezy.com/system/resources/previews/000/583/890/original/gift-icon-vector.jpg" alt="">
-            <h3>Freebies & testera</h3>
-            <span>ne porosi mbi 1500L</span>
-    </div>
-
-    <div class="icons">
-        <img src="https://cdn-icons-png.flaticon.com/512/1611/1611172.png" alt="">
-            <h3>pagese e sigurt</h3>
-            <span>Pagesa me karte apo me para ne dore</span>
-    </div>
-
-</section>
-
-
-<section class="products" id="products">
-    <h1 class="heading"> <span> produktet </span> e reja </h1>
-    <div class="box-container">
-
-
-        <div class="box">
-            <div class="image">
-                <img src="https://roots-pharmacy.com/cdn/shop/files/8f022834-f1a4-44eb-ab36-cff42ea140c7.jpg?v=1762201031&width=1000" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">add to cart</a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Anua Heartleaf Cleanser</h3>
-                <div class="price">1200L</div>
-                <div class="stok">Ka stok</div>
-            </div>
-        </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="https://th.bing.com/th?id=OIF.Lu4bTrFi8mPp%2BIWZG%2FDIeg&cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Anua Heartleaf 70 Soothing Collagen Mask</h3>
-                    <div class="price">300L</div>
-                    <div class="stok">Ka stok</div>
-                </div>
-        </div>
-
-
-        <div class="box">
-            <div class="image">
-                <img src="https://www.scentsational.com/images/anua-heartleaf-intense-calming-cream-50ml-p49402-95490_medium.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">add to cart</a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Anua Heartleaf Intense Calming Cream</h3>
-                <div class="price">1300L</div>
-                <div class="stok">Ka stok</div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="https://m.media-amazon.com/images/I/41ZNRwLuTRL.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">add to cart</a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>BEAUTY OF JOESON Relief Sun Rice + Probiotics SPF 50</h3>
-                <div class="price">1700L</div>
-                <div class="stok">Ka stok</div>
-            </div>
-        </div>
-
-
-        <div class="box">
-            <div class="image">
-                <img src="https://m.media-amazon.com/images/I/51IF5kpotSL.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">add to cart</a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>COSRX Snail Mucin 96%</h3>
-                <div class="price">2000L</div>
-                <div class="stok">Ka stok</div>
-            </div>
-        </div>
-
-
-        <div class="box">
-            <div class="image">
-                <img src="https://m.media-amazon.com/images/I/61KeAJa4x6S._SL1500_.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">add to cart</a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>innisfree Cherry Blossom Glow Jam Cleanser</h3>
-                <div class="price">1900L</div>
-                <div class="stok">Ka stok</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="footer">
-    <div class="box-container">
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#home">home</a>
-            <a href="#about">rreth nesh</a>
-            <a href="#products">produktet</a>
-        </div>
-
-        <div class="box">
-            <h3>extra</h3>
-            <a href="#">my account</a>
-            <a href="#">my cart</a>
-            <a href="#">my favorites</a>
-        </div>
-
-        <div class="box">
-            <h3>location</h3>
-            <a href="#">Tirane</a>
-        </div>
-
-        <div class="box">
-            <h3>contact info</h3>
-            <a href="#">+355-68-123-4567</a>
-            <a href="#">softpetal@gmail.com</a>
-        </div>
-    </div>
-
-    <div class="credit"> created by <span> abov </span> | all rights reserved </div>
-</section>
-
+<script src="script.js"></script>
 </body>
 </html>
