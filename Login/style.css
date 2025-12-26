@@ -208,3 +208,14 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+.error{
+    color:red;
+    font-size: 12px;
+    margin: 3px 0 10px;
+}
+.remember-container {
+    display: flex;
+    align-items: center; /* për të qendruar vertikalisht */
+    gap: 8px; /* hapësira midis checkbox dhe tekstit */
+    margin-top: 10px;
+}
