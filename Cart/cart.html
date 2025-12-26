@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="header">
+    <h2>Cart</h2>
+    <div class="icons">
+        <i class="fas fa-home"></i>
+    </div>
+</div>
+
+<div class="cart-container">
+    <h2>Your Cart</h2>
+
+    <div class="cart-product">
+        <img src="https://m.media-amazon.com/images/I/61KeAJa4x6S._SL1500_.jpg" alt="Product 1">
+        <div class="product-info">
+            <h3>Anua Heartleaf Intense Calming Cream</h3>
+            <div class="price" data-price="1300">1300L</div>
+        </div>
+        <div class="actions">
+            <div class="quantity">
+                <button class="minus">-</button>
+                <span class="qty">1</span>
+                <button class="plus">+</button>
+            </div>
+            <div class="remove">
+                <button onclick="removeProd(this)"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="cart-summary">
+        <h3>Total: <span id="total">0</span>L</h3>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

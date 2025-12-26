@@ -374,6 +374,13 @@ header .fa-bars{
     padding-top: 1rem;
 }
 
+.products .box-container .box .content .stok{
+    font-size: 1rem;
+    color: #8f5a61;
+    padding-top: 1rem;
+    font-weight: bolder;
+}
+
 .footer .box-container{
     display: flex;
     flex-wrap: wrap;

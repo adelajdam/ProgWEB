@@ -1,0 +1,144 @@
+:root {
+    --pink-main: #d97e8a;
+    --pink-dark: #b85c68;
+    --pink-light: #f3c6cc;
+    --pink-bg: #f7e1e4;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+
+body {
+    background: linear-gradient(to right, #e2e2e2, #e7c0bc);
+    padding: 20px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #8b3c46, #e3a0a9);
+    color: white;
+    padding: 20px 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+.favorites-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.favorite-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    gap: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+.favorite-item img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+
+.favorite-item .content {
+    flex: 1;
+}
+
+.favorite-item .content h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.favorite-item .price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--pink-dark);
+    margin-bottom: 10px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remove button{
+    background: transparent;
+    font-size: 14px;
+    color: var(--pink-dark);
+    padding: 0 8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.remove button:hover{
+    color: #333333;
+}
+
+.quantity span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    min-width: 14px;
+    text-align: center;
+}
+
+
+.add-cart {
+    background: var(--pink-main);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.add-cart i {
+    margin-right: 5px;
+}
+
+.add-cart:hover {
+    background: var(--pink-dark);
+}
+
