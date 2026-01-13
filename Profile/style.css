@@ -20,6 +20,31 @@ body {
     margin-top: 20px;
 }
 
+
+
+
+.top-icons {
+    display: flex;
+    align-items: center;   /* ikonat qendrojnë horizontal */
+    gap: 20px;             /* hapsira mes tyre */
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.top-icons a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.top-icons a:hover {
+    color: #d97e8a;
+}
+
+
 .card {
     border-radius: 1.5rem;
     border: none;
