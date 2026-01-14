@@ -1,0 +1,114 @@
+/* RESET I LEHTË */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(180deg, #f6f8f8, #ffffff);
+    color: #2e2e2e;
+    line-height: 1.7;
+}
+
+/* HEADER */
+.blog-header {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #7aa3a3;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #4f7f7f;
+}
+
+/* BLOG CONTAINER */
+.blog-full {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* IMAGE */
+.blog-full img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 35px;
+    object-fit: cover;
+}
+
+/* TITULLI */
+.blog-full h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1f1f1f;
+}
+
+/* META */
+.blog-meta {
+    font-size: 0.95rem;
+    color: #9a9a9a;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* PARAGRAFE */
+.blog-full p {
+    font-size: 1.05rem;
+    margin-bottom: 22px;
+    color: #444;
+}
+
+/* SUBTITULLI */
+.blog-full h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 45px 0 20px;
+    color: #2f5f5f;
+}
+
+/* LISTA */
+.blog-full ul {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.blog-full ul li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    position: relative;
+}
+
+/* VIZAT E LISTËS */
+.blog-full ul li::marker {
+    color: #7aa3a3;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .blog-full {
+        padding: 30px 22px;
+    }
+
+    .blog-full h1 {
+        font-size: 1.9rem;
+    }
+
+    .blog-full h2 {
+        font-size: 1.4rem;
+    }
+}

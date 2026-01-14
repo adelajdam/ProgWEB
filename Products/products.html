@@ -2,24 +2,292 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details</title>
+    <title>Cosmico – Products</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<div class="product-details">
-    <h1 id="product-name"></h1>
-    <img id="product-img" alt="">
-    <p id="product-price"></p>
-    <p id="product-stock"></p>
-    <h3>Description</h3>
-    <p id="product-desc"></p>
-    <h3>Ingredients</h3>
-    <ul id="product-ingredients"></ul>
-</div>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">Cosmico</div>
 
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-icons">
+        <a href="../Favorites/fav.html">
+            <i class="fas fa-heart"></i>
+        </a>
+
+
+<!--        TODO: Lidhjet midis cart dhe profile-->
+
+        <a href="../Cart/cart.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+        <a href="../Profile/profile.html">
+        <i class="fa-solid fa-user"></i>
+        </a>
+
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <img src="../images/skincare2.jpg" class="hero-bg">
+    <div class="hero-content">
+    <div class="hero-text">
+        <h1>Beauty is the<br>illumination of<br>your soul</h1>
+        <p>Natural skincare products for glowing skin.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </div>
+    </div>
+</section>
+
+<section class="categories" id="categories">
+    <div class="category-card">
+        <div class="category-img">
+            <img src="/images/cleanser.jpg" alt="Cleansers">
+        </div>
+        <h3>Cleansers</h3>
+    </div>
+
+    <div class="category-card">
+        <div class="category-img">
+            <img src="/images/moisturizer.jpg" alt="Moisturizers">
+        </div>
+        <h3>Moisturizers</h3>
+    </div>
+
+    <div class="category-card">
+        <div class="category-img">
+            <img src="/images/serum.jpg" alt="Serums">
+        </div>
+        <h3>Serums</h3>
+    </div>
+
+    <div class="category-card">
+        <div class="category-img">
+            <img src="https://i.pinimg.com/736x/5f/5a/9d/5f5a9d8af93e4bd1f853a68a49bac625.jpg" alt="Masks">
+        </div>
+        <h3>Masks</h3>
+    </div>
+
+    <div class="category-card">
+        <div class="category-img">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.7ru5yRGeTw7aSzaBe4KkRQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Sun Care">
+        </div>
+        <h3>Sun Care</h3>
+    </div>
+</section>
+
+
+
+</section>
+
+<!-- PRODUCTS -->
+<section class="products-section" id="products">
+    <h2>Best Sellers</h2>
+
+    <div class="products-grid">
+        <div class="product-card">
+            <a href="../product-details/product-details.html?id=1">
+            <img src="https://m.media-amazon.com/images/I/51IF5kpotSL.jpg">
+            <h3>COSRX Snail Mucin</h3>
+            <p class="price">2000 L</p>
+            </a>
+        </div>
+
+        <div class="product-card">
+            <a href="../product-details/product-details.html?id=2">
+            <img src="https://m.media-amazon.com/images/I/61KeAJa4x6S._SL1500_.jpg">
+            <h3>Innisfree Cleanser</h3>
+            <p class="price">1900 L</p>
+            </a>
+        </div>
+
+        <div class="product-card">
+            <a href="../product-details/product-details.html?id=3">
+            <img src="https://m.media-amazon.com/images/I/41ZNRwLuTRL.jpg">
+            <h3>Relief Sun SPF 50</h3>
+            <p class="price">1700 L</p>
+            </a>
+        </div>
+
+        <div class="product-card">
+            <a href="../product-details/product-details.html?id=4">
+            <img src="https://i.pinimg.com/originals/96/3f/b5/963fb56dfb98e67ecceff5f7532ac546.jpg" alt="Moisturiser">
+            <h3>Innisfree Green Tea Moisturizer</h3>
+            <p class="price">1800 L</p>
+            </a>
+        </div>
+
+        <div class="product-card">
+            <a href="../product-details/product-details.html?id=5">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.kxiyxj_whClQW3sxvvfpkQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Serum">
+            <h3>Anua Heartleaf Soothing Serum</h3>
+            <p class="price">2200 L</p>
+            </a>
+        </div>
+
+        <div class="product-card">
+            <a href="../product-details/product-details.html?id=6">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.ucM_737MyVqdA1sBPbwezAHaGR?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Face Mask">
+            <h3>Beauty of Joseon Glow Mask</h3>
+            <p class="price">900 L</p>
+            </a>
+        </div>
+
+        </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>About Cosmico</h2>
+            <p>
+                Cosmico is a modern skincare brand inspired by
+                natural beauty and self-care rituals.
+                Our products are designed to nourish, protect,
+                and illuminate your skin every day.
+            </p>
+            <p>
+                We believe skincare is more than a routine —
+                it’s a moment of calm, confidence, and care.
+            </p>
+        </div>
+
+        <div class="about-video">
+            <video autoplay muted loop playsinline>
+                <source src="/images/skincare-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+
+
+<!-- BLOG -->
+<section class="blog-section" id="blog">
+    <h2>Our Blog</h2>
+    <p class="blog-subtitle">
+        Discover skincare tips, routines and ingredient guides written by experts.
+    </p>
+
+    <div class="blog-grid">
+        <div class="blog-card">
+            <img src="https://skinsense.sg/wp-content/uploads/2024/06/d3ba69901e8eafc78b86e848bd41f5da.jpg" alt="Skincare Routine">
+            <div class="blog-content">
+                <span class="blog-category">Routine</span>
+                <h3>How to Build a Simple Skincare Routine</h3>
+                <p>
+                    Learn the essential steps for healthy,
+                    glowing skin without overcomplicating your routine.
+                </p>
+                <a href="../blog/blog-routine.html">Read More →</a>
+
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.sPYRIMjJH0tR87lMWr0nJAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Serum Ingredients">
+            <div class="blog-content">
+                <span class="blog-category">Ingredients</span>
+                <h3>Best Ingredients for Sensitive Skin</h3>
+                <p>
+                    Discover calming and nourishing ingredients
+                    that help protect sensitive skin.
+                </p>
+                <a href="../blog/blog-ingredients.html">Read More →</a>
+
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://eswbeauty.com/cdn/shop/files/mayafraserphoto--04.jpg?v=1744114891&width=2820" alt="Face Masks">
+            <div class="blog-content">
+                <span class="blog-category">Masks</span>
+                <h3>Why Face Masks Are Essential for Your Skin</h3>
+                <p>
+                    Face masks help hydrate, repair and
+                    refresh your skin when it needs extra care.
+                </p>
+                <a href="../blog/blog-masks.html">Read More →</a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!<!-- CONTACT -->
+<section class="contact-section" id="contact">
+    <div class="contact-container">
+
+        <!-- INFO -->
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>
+                We'd love to hear from you. Whether you have
+                a question about our products or just want to say hi,
+                feel free to reach out.
+            </p>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@cosmico.com</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@cosmico</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Tirana, Albania</span>
+            </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>
+        © 2026 <span>Cosmico</span>. All rights reserved.
+    </p>
+</footer>
+
+
+
+<!-- JS -->
 <script src="script.js"></script>
 </body>
 </html>
