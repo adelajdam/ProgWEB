@@ -92,6 +92,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <div class="container light-style flex-grow-1 container-p-y">
     <h4>Account settings</h4>
 
+    <div class="top-icons">
+        <a href="index.php" title="Home">
+            <i class="fas fa-home"></i>
+        </a>
+    </div>
+
     <div class="card overflow-hidden">
         <div class="row no-gutters row-bordered row-border-light">
 
@@ -101,12 +107,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-general">General</a>
                     <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-change-password">Change password</a>
                     <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-info">Info</a>
+                    <a class="list-group-item list-group-item-action logout-btn" href="logout.php">Logout</a>
                 </div>
-            </div>
-
-            <!-- Logout button -->
-            <div class="text-right mb-3">
-                <a href="logout.php" class="btn btn-danger logout-btn">Logout</a>
             </div>
 
 

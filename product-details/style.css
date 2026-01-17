@@ -4,6 +4,8 @@ body {
     padding: 60px;
 }
 
+
+
 .product-details {
     display: flex;
     gap: 50px;
@@ -122,22 +124,6 @@ body {
     font-weight: 600;
 }
 
-/* ADD TO CART */
-.add-to-cart {
-    background: #b85c68;
-    color: white;
-    border: none;
-    padding: 14px 30px;
-    border-radius: 14px;
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.add-to-cart:hover {
-    background: #a04b56;
-}
 
 /*FAVOURITE*/
 .favourite {
@@ -167,5 +153,13 @@ body {
     border-color: #b85c68;
 }
 
-
+/* Container i ikonave të navigacionit */
+.nav-icons {
+    position: fixed; /* të qëndrojnë në ekran gjatë scroll */
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px; /* distanca mes ikonave */
+    z-index: 1000; /* mbi elemente të tjerë */
+}
 
