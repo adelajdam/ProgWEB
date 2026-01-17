@@ -89,22 +89,25 @@ document.getElementById("signupForm").addEventListener("submit", function(e) {
 
 
 // ---------- LOGIN VALIDATION ----------
-document.getElementById("loginForm").addEventListener("submit", function(e){
+document.getElementById("loginForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
     let formData = new FormData(this);
 
-    fetch("../login.php", {
+    fetch("../login.php", {  // path relativ sipas vendndodhjes së login.php
         method: "POST",
         body: formData
     })
         .then(res => res.json())
         .then(data => {
-            if(data.status === "error"){
+            console.log(data); // kontrollo në console
+            if (data.status === "error") {
                 alert(data.message);
-            } else {
-                window.location.href = "dashboard.php";
+            } else if (data.status === "success") {
+                // redirect
+                window.location.href = "../profile.php";  // relative path
             }
         })
         .catch(err => console.log(err));
 });
+
