@@ -16,49 +16,45 @@ require "../config.php";
 
     <!-- SIGN UP -->
     <div class="form-container sign-up">
-        <form id="signupForm" method="POST" action="/ProgWEB/register.php">
+        <form id="signupForm" method="POST" action="../register.php">
             <h1>Create Account</h1>
 
-            <input type="text" name="name" placeholder="Name" required
-                   value="<?php echo htmlspecialchars($_GET['name'] ?? ''); ?>">
+            <input type="text" id="signupName" name="name" placeholder="Name" required>
+            <small id="nameError" style="color:#d97e8a; font-size:12px;"></small>
 
-            <input type="email" name="email" placeholder="Email" required
-                   value="">
+            <input type="email" id="signupEmail" name="email" placeholder="Email" required>
+            <small id="emailError" style="color:#d97e8a; font-size:12px;"></small>
 
-            <?php if(isset($_GET['signup_error']) && $_GET['signup_error'] === 'email_exists'): ?>
-                <p style="color:red; font-size:12px; margin-top:5px;">Ky email është përdorur tashmë</p>
-            <?php endif; ?>
+            <input type="password" id="signupPassword" name="password" placeholder="Password" required>
+            <small id="passwordError" style="color:#d97e8a; font-size:12px;"></small>
 
-            <input type="password" name="password" placeholder="Password"
-                   value="<?php echo htmlspecialchars($_GET['password'] ?? ''); ?>">
-
-            <?php if(isset($_GET['signup_success'])): ?>
-                <p style="color:green;">Regjistrimi u krye! Kontrollo email-in për verifikim ✅</p>
-            <?php endif; ?>
 
             <button type="submit">Sign Up</button>
+            <p id="generalError" style="color:#d97e8a; font-size:12px;"></p>
+            <p id="successMsg" style="color:#2f5f5f; font-size: 13px;"></p>
         </form>
     </div>
 
     <!-- LOGIN -->
     <div class="form-container sign-in">
-        <form id="loginForm" method="POST" action="/ProgWEB/login.php">
+        <form id="loginForm" method="POST" action="../login.php">
             <h1>Log In</h1>
 
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
 
-            <?php if(isset($_GET['login_error'])): ?>
-                <p style="color:red;">Email ose password i gabuar</p>
-            <?php endif; ?>
+            <div class="login-options">
+                <a href="../forgot_password.php" class="forgot-password">
+                    Forgot password?
+                </a>
 
-            <?php if(isset($_GET['verify_success'])): ?>
-                <p style="color:green;">Llogaria u verifikua me sukses! Tani mund të bëni login ✅</p>
-            <?php endif; ?>
 
-            <?php if(isset($_GET['verify_error'])): ?>
-                <p style="color:red;">Gabim gjatë verifikimit të llogarisë</p>
-            <?php endif; ?>
+                <label class="remember-me">
+                    <input type="checkbox" name="remember_me">
+                    <span>Remember me</span>
+                </label>
+
+            </div>
 
             <button type="submit">Log In</button>
         </form>

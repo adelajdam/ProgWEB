@@ -17,7 +17,7 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
-    $mail->setFrom('cosmico.noreply@gmail.com', 'Skincare App');
+    $mail->setFrom('cosmico.noreply@gmail.com', 'Cosmico');
     $mail->addAddress('bajameh6@gmail.com');
 
     $mail->isHTML(true);

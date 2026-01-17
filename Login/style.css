@@ -219,3 +219,41 @@ body{
     gap: 8px; /* hapësira midis checkbox dhe tekstit */
     margin-top: 10px;
 }
+
+
+.login-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px; /* hapësira mes Forgot & Remember */
+    font-size: 14px;
+}
+
+/* Forgot password */
+a.forgot-password {
+    text-decoration: none;
+    color: #8b3c46;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+a.forgot-password:hover {
+    color: #1f1f1f;
+    text-decoration: underline;
+}
+
+/* Remember me */
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    color: #555;
+}
+
+.remember-me input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #8b3c46;
+}
